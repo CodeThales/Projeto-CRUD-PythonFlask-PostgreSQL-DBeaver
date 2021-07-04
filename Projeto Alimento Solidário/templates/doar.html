@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../static/favicon32.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../static/style.css">
+  <link rel="stylesheet" href="../static/pages/doar.css">  
+  <title>Alimento Solidário</title>
+</head>
+<body>
+  {% include 'header.html' %}
+
+  <div class="bloco">
+    <h2>Preencha os campos abaixo para doar um alimento para quem mais precisa!</h2>
+  </div>
+  
+  {% if cadastrar %}
+  
+  <div class="bloco">
+    <p>Doação Cadastrada Com Sucesso!</p>
+      <br>      
+  </div>
+
+  {% else %}
+
+  <form action="{{url_for('app.doar')}}" method="POST">
+
+    <div class="grupo">
+      <div class="campo">
+          <label for="alimento.nome"><strong>Seu Nome</strong></label>
+          <input type="text" name="nome" id="nome" required>
+      </div>
+      
+      <div class="campo">
+          <label for="alimento.cidade"><strong>Sua Cidade</strong></label>
+          <input type="text" name="cidade" id="cidade" required>
+      </div>
+
+      <div class="campo">
+        <label for="alimento.telefone"><strong>Seu Telefone</strong></label>
+        <input type="text" name="telefone" id="telefone" required>
+    </div>        
+    
+      <div class="campo">
+        <label for="alimento.alimento"><strong>Alimento que vai doar</strong></label>
+        <input type="text" name="alimento" id="alimento" required>
+      </div>
+
+      <div class="campo">
+        <label for="alimento.estado"><strong>Seu Estado</strong></label>
+        <input type="text" name="estado" id="estado" required>
+      </div>        
+    </div>
+    
+    <div class="bloco">
+      <button id="cadastrar" type="submit" onsubmit="" class="botao"><strong>Cadastrar Doação</strong></button>
+    </div>
+  </form>  
+  {% endif %}
+</body>
+</html>
