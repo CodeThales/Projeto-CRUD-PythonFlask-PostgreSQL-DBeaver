@@ -1,0 +1,39 @@
+body {
+  background: #eee1e1;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  min-height: calc(100vh - 40px);
+}
+
+.header {
+  padding-top: 20px;
+  margin-bottom: 50px;
+  background: #eee1e1;
+}
+
+h1, h2, p{
+  font-family: 'Gill Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.bloco {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.botao {
+  background-color: #ecc133;
+  border: none;
+  border-radius: 10px;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0 5px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+}
