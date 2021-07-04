@@ -1,0 +1,31 @@
+.tabela {
+  border: 1px solid #bababa;
+  border-spacing: 0;
+  margin: 0 50px 20px;
+  width: 100%;
+}
+
+.tabela tr:nth-child(even) td {
+  background: #fff;
+}
+
+.tabela td {
+  padding: 10px;
+  font-family: 'Gill Sans', sans-serif;
+}
+
+h2{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: 'Gill Sans', sans-serif;
+  font-size: 22pt;
+}
+
+.cabecalho{
+  font:bolder  normal 16pt  black solid;
+}
+
+.trow{
+  font-family: 'Gill Sans', sans-serif;
+  font-size: 16pt;
+}
