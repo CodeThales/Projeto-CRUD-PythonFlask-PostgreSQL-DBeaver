@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../static/favicon32.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../static/style.css">
+  <link rel="stylesheet" href="../static/pages/editar.css">
+  <title>Alimento Solidário</title>
+</head>
+<body>
+  {% include 'header.html' %}
+
+  <div class="bloco">
+    <h2>Editar informações da doação</h2>
+  </div>
+
+  {% if sucesso %}
+  <div class="bloco sucesso">
+    <p>Registro editado com sucesso</p>
+  </div>
+  {% endif %}
+
+  <form action="" method="POST">
+    <fieldset class="bloco">        
+      <div class="campo">
+          <label for="aimento.nome"><strong>Seu Nome: </strong></label>
+          <input type="text" name="nome" id="nome" value="{{alimento.nome}}">
+      </div>        
+      <div class="campo">
+        <label for="alimento.cidade"><strong>Sua Cidade: </strong></label>
+        <input type="text" name="cidade" id="cidade" value="{{alimento.cidade}}">
+      </div>
+      <div class ="campo">
+        <label for="alimento.telefone"><strong>Seu Telefone: </strong></label>
+        <input type="text" name="telefone" id="telefone" value="{{alimento.telefone}}">
+      </div>      
+      <div class="campo">
+        <label for="alimento.alimento"><strong>Alimento doado: </strong></label>
+        <input type="text" name="alimento" id="alimento" value="{{alimento.alimento}}">
+      </div>
+      <div class="campo">
+        <label for="alimento.estado"><strong>Seu Estado: </strong></label>
+        <input type="text" name="estado" id="estado" value="{{alimento.estado}}">
+      </div>        
+    </fieldset>    
+    <div class="bloco">
+      <button id="atualizar" type="submit" onsubmit="" class="botao"><strong>Atualizar Doação</strong></button>
+    </div>
+  </form>  
+</body>
+</html>
