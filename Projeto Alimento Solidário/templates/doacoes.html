@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../static/favicon32.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../static/style.css">
+  <link rel="stylesheet" href="../static/pages/doacoes.css">
+  <title>Alimento Solidário</title>
+</head>
+<body>
+  {% include 'header.html' %}
+
+  <div class="bloco">
+    <h2>Procure na lista abaixo, o alimento que você precisa</h2>
+  </div>
+  
+  <div class="bloco">
+    <table class="tabela">      
+      <th> 
+        <tr class="cabecalho">               
+          <td>Nome do Doador</td>
+          <td>Cidade do Doador </td>
+          <td>Telefone do Doador </td>
+          <td>Alimento Doado </td>
+          <td>Estado do Doador </td>
+          <td>Alterar</td>
+          <td>Excluir</td>
+          <!-- <td>Excluir</td> -->
+      </tr>
+      </th>      
+      
+      <tbody>        
+        {% for alimento in listaDeAlimentos %}        
+        <tr>          
+          <td class="trow">{{alimento.nome}}</td>
+          <td class="trow">{{alimento.cidade}}</td>
+          <td class="trow">{{alimento.telefone}}</td>
+          <td class="trow">{{alimento.alimento}}</td>
+          <td class="trow">{{alimento.estado}}</td>
+          <td>
+            <a href="/editar/{{alimento.id}}"><button>EDITAR</button></a>
+          </td>
+          <td>
+            <a href="/excluir/{{alimento.id}}"><button>X</button></a>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+</body>
+</html>
