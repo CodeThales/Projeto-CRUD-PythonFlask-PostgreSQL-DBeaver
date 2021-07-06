@@ -37,3 +37,7 @@ h1, h2, p{
   text-align: center;
   text-decoration: none;
 }
+
+.botao:hover{
+  transform: scale(1.05);
+}
