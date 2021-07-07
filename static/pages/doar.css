@@ -21,11 +21,21 @@
 .campo input{
   padding: 0.2em;
   border: 1px solid #ecc133;  
+  /* block-size: 16pt; */
+  width: 200px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+  display: block;
+}
+
+#estado{
+  padding: 0.2em;
+  border: 1px solid #ecc133;  
   block-size: 16pt;
   width: 200px;
   box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
   display: block;
 }
+
 
 #cadastrar{
   margin-top: 50px;
