@@ -38,7 +38,7 @@
       </div>
       <div class ="campo">
         <label for="alimento.telefone"><strong>Seu Telefone: </strong></label>
-        <input type="text" name="telefone" id="telefone" value="{{alimento.telefone}}">
+        <input type="text" name="telefone" id="tel" value="{{alimento.telefone}}">
       </div>      
       <div class="campo">
         <label for="alimento.alimento"><strong>Alimento doado: </strong></label>
@@ -53,6 +53,7 @@
       <button id="excluir" type="submit" onsubmit="" class="botao">Excluir Doação</button>
     </div>
   </form>
-  {% include 'footer.html' %}  
+  {% include 'footer.html' %}
+  <script src="../static/pages/excluir.js"></script>  
 </body>
 </html>
