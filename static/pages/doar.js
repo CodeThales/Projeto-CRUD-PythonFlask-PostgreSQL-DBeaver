@@ -9,3 +9,4 @@ const mascaraTelefone = (valor) => {
     valor = valor.replace(/(\d)(\d{4})$/, "$1-$2")
     tel.value = valor // Insere o(s) valor(es) no campo
 }
+
