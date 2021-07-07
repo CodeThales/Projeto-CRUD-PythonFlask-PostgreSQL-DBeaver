@@ -1,14 +1,40 @@
-body {
+html, body {
   background: #eee1e1;
   font-family: "Montserrat", sans-serif;
   margin: 0;
-  min-height: calc(100vh - 40px);
+  position: relative;
+ 
+  height: 100%;
 }
+
+.container{
+  min-height: 100%;
+  position: relative;
+}
+
 
 .header {
   padding-top: 20px;
   margin-bottom: 50px;
   background: #eee1e1;
+}
+
+.footer{
+  background-color: black;
+  color: aliceblue;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  position:absolute;
+  bottom:0;
+  width:100%;
+}
+
+span{
+  display: flex;
+  align-items: flex-end;
+  font-size: 14pt;
+
 }
 
 h1, h2, p{
