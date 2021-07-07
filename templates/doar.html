@@ -40,7 +40,7 @@
 
       <div class="campo">
         <label for="alimento.telefone"><strong>Seu Telefone</strong></label>
-        <input type="text" name="telefone" id="telefone" required>
+        <input type="text" name="telefone" id="tel" pattern="\(\d{2}\)\s*\d{5}-\d{4}" required>
     </div>        
     
       <div class="campo">
@@ -60,5 +60,6 @@
   </form>  
   {% endif %}
   {% include 'footer.html' %}
+  <script src="../static/pages/doar.js"></script>
 </body>
 </html>
