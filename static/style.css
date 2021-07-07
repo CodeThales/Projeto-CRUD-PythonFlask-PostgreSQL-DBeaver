@@ -66,4 +66,5 @@ h1, h2, p{
 
 .botao:hover{
   transform: scale(1.05);
+  background-color: #fac003;  
 }
