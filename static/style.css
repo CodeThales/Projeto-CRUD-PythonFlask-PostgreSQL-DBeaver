@@ -25,7 +25,7 @@ html, body {
   height: 40px;
   display: flex;
   justify-content: center;
-  position:absolute;
+  /* position:absolute; */
   bottom:0;
   width:100%;
 }
