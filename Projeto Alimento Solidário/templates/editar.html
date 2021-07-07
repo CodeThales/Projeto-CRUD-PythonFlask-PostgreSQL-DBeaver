@@ -23,7 +23,7 @@
   {% endif %}
 
   <form action="" method="POST">
-    <fieldset class="bloco">        
+    <div class="bloco">        
       <div class="campo">
           <label for="aimento.nome"><strong>Seu Nome: </strong></label>
           <input type="text" name="nome" id="nome" value="{{alimento.nome}}">
@@ -44,10 +44,11 @@
         <label for="alimento.estado"><strong>Seu Estado: </strong></label>
         <input type="text" name="estado" id="estado" value="{{alimento.estado}}">
       </div>        
-    </fieldset>    
+    </div>    
     <div class="bloco">
       <button id="atualizar" type="submit" onsubmit="" class="botao"><strong>Atualizar Doação</strong></button>
     </div>
-  </form>  
+  </form> 
+  {% include 'footer.html' %} 
 </body>
 </html>
